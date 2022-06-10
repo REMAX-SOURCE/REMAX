@@ -1,0 +1,87 @@
+{
+    "name": "Video x Music Stream Bot",
+    "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
+    "logo": "https://telegra.ph/file/be59e08410179632a7888.jpg",
+    "keywords": [
+        "pytgcalls",
+        "telegram bot",
+        "video stream",
+        "pyrogram"
+    ],
+    "website": "https://t.me/REMAX_SOURCE",
+    "repository": "https://github.com/REMAX-SOURCE/REMAX",
+    "success_url": "https://t.me/hama_refaat",
+    "env": {
+        "API_ID": {
+            "description": "ضـع الايبي ايدي هنا",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "ضـع الايبي هاش",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "ضـع توكن البوت الخاص بك هنا",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "ضـع يوزر بوتك بدون علامة @",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "ضـع اسـم للبـوت",
+            "required": true
+        },
+        "ASSISTANT_NAME": {
+            "description": "ضـع يوزر الحساب المساعد بدون علامة @",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "ضـع كود تيرمكس هنا",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "ضـع ايدي المطور الاساسي",
+            "required": true
+        },
+        "GROUP_SUPPORT": {
+            "description": "ضع هنا يوزر جروبك بدون علامة @",
+            "required": true,
+            "value": "CU_94"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "ضع هنا يوزر قناتك بدون علامة @",
+            "required": true,
+            "value": "REMAX_SOURCE"
+        },
+        "OWNER_NAME": {
+            "description": "ضع هنا يوزر المطور بدون علامة @",
+            "required": true,
+            "value": "WQ_SI"
+        },
+        "ALIVE_NAME": {
+            "description": "لا تغيـرها",
+            "required": true,
+            "value": "­𝐑𝐄𝐌𝐀𝐗_𝐌𝐔𝐒𝐈𝐂"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
